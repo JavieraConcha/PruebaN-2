@@ -1,0 +1,68 @@
+<header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="Home.html">Informacion</a></li>
+            <li><a href="Formulario.html">Formulario</a></li>
+            <li><a href="Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <html>
+
+<head>
+    <a href="Home.html" target="_blank"> <input type="button" value="Atras"> </a>
+    <title>Contacto</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="validarRUT.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#basic-form").validate();
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <H1 class="center">Contacto</H1>
+    <H2><form id="basic-form" action="" method="post">
+        
+        <p class="text-center"><label for="name">Nombre Completo</label>
+            <input id="name" name="name" minlength="4" type="text" required>
+        </p>
+
+        <p class="text-center"><label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" required>
+        </p>
+
+        <br>Comentarios</br>
+        <textarea name="" id="" cols="50" rows="4"></textarea>
+      
+
+
+        <p>
+            <input class="submit" type="submit" value="Enviar">
+        </p>
+        
+        <p>
+            <input class="submit" type="reset" value="Borrar">
+        </p>
+    </H2>
+    <h3>
+        Sitio Desarrollado por Alumnos de DUOC.
+    </h3>
+        
+
+        
+    </form>
+
+
+</body>
+
+</html>
+</header>
